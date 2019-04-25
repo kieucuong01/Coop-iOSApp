@@ -1,0 +1,121 @@
+/*
+ Localizable.strings
+ ParkingManagementApp-ios
+ 
+ Created by Cuong Kieu on 6/21/18.
+ Copyright © 2018 Oceanize. All rights reserved.
+ */
+
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Common
+ ****
+ */
+"yen" = "円";
+"year" = "Năm";
+"month" = "Tháng";
+"yes" = "Yes";
+"no" = "No";
+"Global_Date_Format" = "dd/MM/yyyy";
+
+// MARK: - COMMON ALERT TITLE
+"alert_warning_title"                   = "Warning";
+"alert_view_setting_label_logout"       = "Logout";
+"alert_view_setting_label_logout_success"      =    "ログアウトしました";
+"alert_edit_profile_success_title" = "プロフィールを変更しました";
+
+// MARK: - COMMON BUTTON TITLE
+"button_cancel_title"          = "Hủy";
+"button_ok_title"          = "OK";
+"button_done_title"          = "Hoàn thành";
+"button_back_title"            = "Quay lại";
+"button_camera_title"           = "Chụp ảnh";
+"button_library_title"           = "Chọn ảnh";
+
+// MARK: - ERROR MESSAGE
+"error_wrong_format_email"          = "メールアドレスを正しく入力してください";
+"error_empty_email"                 = "メールアドレスを入力してください";
+"error_existed_email"               = "このメールアドレスが既に登録されています";
+"error_empty_password"              = "パスワードを入力してください";
+"error_wrong_email"                 = "メールアドレス又はパスワードが正しくありません。再度入力してください";
+"error_not_cofirm_email"            = "メールアドレスの確認が完了していません。\n登録確認メールから登録を完了してください。";
+"error_wrong_format_password" = "パスワードは8～40文字で入力してください";
+"error_wrong_format_phone" = "パースワードは6~20文字で入力してください";
+"error_wrong_email_or_password"     = "メールアドレス又はパスワードが正しくありません。再度入力してください";
+"error_wrong_old_n_new_password" = "現在のパスワードと新しいパスワードを正しく入力してください。";
+"error_empty_phone"                  = "電話番号を入力してください";
+"error_wrong_format_kataname"                  = "カタカナで入力してください";
+"error_no_internet_connection"                  = "インターネット接続がありません。接続を確認してください。";
+"error_password_not_match"= "パスワードが確認用と不一致です";
+"error_duplicate_data" = "すでに登録されているメールアドレスです";
+
+// MARK: - ERROR API MESSAGE
+"error_common_api" = "エラーが発生しました。\nしばらくしてからもう一度試してみてください";
+"error_common" = "エラーが発生しました。\nしばらくしてからもう一度試してみてください";
+"APIBase_Network_Error" = "インターネット接続がありません。接続を確認してください。";
+
+"error_api_101" = "ユーザーIDが見つかりません";
+"error_api_102" = "このユーザーIDが既に登録されています";
+"error_api_103" = "トークンがすでに使用されています";
+"error_api_104" = "トークンが見つかりません";
+"error_api_105" = "トークンが無効です";
+"error_api_1005" = "メールアドレスは正しく入力してください";
+"error_api_400" = "ユーザーIDが異常です";
+"error_api_401" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_403" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3030" = "メールアドレスとパスワードは必須項目です";
+"error_api_3032" = "メールアドレスかパスワードが間違っています";
+"error_api_3040" = "ユーザーネームとパスワードを入力してください";
+"error_api_3041" = "メールアドレスかパスワードが間違っています";
+"error_api_3050" = "このメールアドレスは既に使われています";
+"error_api_3051" = "パスワードが既に設定されています";
+"error_api_3052" = "2038年以降は選択できません";
+"error_api_3053" = "パスワードは8～40文字で入力してください";
+"error_api_3054" = "すでに登録されているユーザーです。ログイン画面から進んでください";
+"error_api_3055" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3056" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3057" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3058" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3061" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3070" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3090" = "このメールアドレスが見つかりません";
+"error_api_1012" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3100" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3101" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3110" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+"error_api_3111" = "エラーが発生しました。しばらくしてからもう一度試してみてください";
+
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Localized by flow screen
+ ****
+ */
+
+// MARK: - INTRO SCREEN
+"intro_lbl_title1" = "Intro title 1";
+"intro_lbl_subtitle1" = "Intro subtitle 1";
+"intro_lbl_title2" = "Intro title 2";
+"intro_lbl_subtitle2" = "Intro subtitle 2";
+"intro_lbl_title3" = "Intro title 3";
+"intro_lbl_subtitle3" = "Intro subtitle 1";
+"intro_btn_skip" = "SKIP";
+"intro_btn_start" = "START";
+
+// MARK: - SIGNIN SCREEN
+"signin_tf_email" = "User";
+"signin_tf_password" = "Password";
+"signin_btn_signin" = "LOGIN";
+
+"mypage_btn_faq" = "Câu hỏi thường gặp";
+"mypage_btn_reseting" = "Thay đổi";
+"mypage_lbl_profile" = "Thông tin";
+"mypage_lbl_property" = "Tài sản";
+"mypage_lbl_term" = "Điều khoản";
+"mypage_lbl_policy" = "Chính sách riêng tư";
+"mypage_lbl_version" = "Version";
+"mypage_lbl_logout" = "Đăng xuất";
+
+"new_lbl_tabbar" = "TỔNG QUÁT";
+"dashboard_lbl_tabbar" = "THỐNG KÊ";
+"chat_lbl_tabbar" = "HOẠT ĐỘNG";
+"mypage_lbl_tabbar" = "BÃI XE";

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FormOneField" customModule="CoopApp_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNq-96-nXT">
+                    <rect key="frame" x="24.5" y="233.5" width="326" height="200"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-HH-9Uu">
+                            <rect key="frame" x="0.0" y="30" width="326" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihy-vn-cYR">
+                            <rect key="frame" x="40" y="67.5" width="246" height="42.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFi-dA-lGy">
+                            <rect key="frame" x="40" y="130" width="246" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6u-Uk-6ln" customClass="UIBorderButton" customModule="CoopApp_ios" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="50"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="clickedButtonCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="OYF-l7-Uyr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-fh-6Kt" customClass="UIColorButton" customModule="CoopApp_ios" customModuleProvider="target">
+                                    <rect key="frame" x="128" y="0.0" width="118" height="50"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="clickedButtonOK:" destination="iN0-l3-epB" eventType="touchUpInside" id="wuK-Vb-Eaf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="T6u-Uk-6ln" firstAttribute="top" secondItem="BFi-dA-lGy" secondAttribute="top" id="3Z9-BS-xEg"/>
+                                <constraint firstItem="B9c-fh-6Kt" firstAttribute="width" secondItem="T6u-Uk-6ln" secondAttribute="width" id="40U-km-c82"/>
+                                <constraint firstAttribute="bottom" secondItem="T6u-Uk-6ln" secondAttribute="bottom" id="DCb-TB-Ep7"/>
+                                <constraint firstItem="T6u-Uk-6ln" firstAttribute="leading" secondItem="BFi-dA-lGy" secondAttribute="leading" id="Eby-wX-vPu"/>
+                                <constraint firstAttribute="bottom" secondItem="B9c-fh-6Kt" secondAttribute="bottom" id="N1t-Ic-dHr"/>
+                                <constraint firstAttribute="trailing" secondItem="B9c-fh-6Kt" secondAttribute="trailing" id="NTB-ku-Ezh"/>
+                                <constraint firstAttribute="height" constant="50" id="YRJ-rQ-0ue"/>
+                                <constraint firstItem="B9c-fh-6Kt" firstAttribute="top" secondItem="BFi-dA-lGy" secondAttribute="top" id="exe-5H-5k5"/>
+                                <constraint firstItem="B9c-fh-6Kt" firstAttribute="leading" secondItem="T6u-Uk-6ln" secondAttribute="trailing" constant="10" id="ioI-35-peT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8ar-HH-9Uu" firstAttribute="width" secondItem="KNq-96-nXT" secondAttribute="width" id="GCE-PT-zfq"/>
+                        <constraint firstItem="Ihy-vn-cYR" firstAttribute="top" secondItem="8ar-HH-9Uu" secondAttribute="bottom" constant="17" id="IMZ-zX-yVg"/>
+                        <constraint firstAttribute="trailing" secondItem="Ihy-vn-cYR" secondAttribute="trailing" constant="40" id="Lcy-54-VIF"/>
+                        <constraint firstItem="BFi-dA-lGy" firstAttribute="leading" secondItem="Ihy-vn-cYR" secondAttribute="leading" id="LxJ-ej-wPg"/>
+                        <constraint firstItem="8ar-HH-9Uu" firstAttribute="centerX" secondItem="KNq-96-nXT" secondAttribute="centerX" id="NDv-8N-fkZ"/>
+                        <constraint firstItem="8ar-HH-9Uu" firstAttribute="top" secondItem="KNq-96-nXT" secondAttribute="top" constant="30" id="Y15-0b-qJZ"/>
+                        <constraint firstItem="BFi-dA-lGy" firstAttribute="trailing" secondItem="Ihy-vn-cYR" secondAttribute="trailing" id="i3z-Q2-USa"/>
+                        <constraint firstItem="BFi-dA-lGy" firstAttribute="top" secondItem="Ihy-vn-cYR" secondAttribute="bottom" constant="20" id="ml4-3T-3c5"/>
+                        <constraint firstItem="Ihy-vn-cYR" firstAttribute="leading" secondItem="KNq-96-nXT" secondAttribute="leading" constant="40" id="oJO-46-TGQ"/>
+                        <constraint firstAttribute="bottom" secondItem="BFi-dA-lGy" secondAttribute="bottom" constant="20" id="s9S-Zs-1YH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KNq-96-nXT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="200:375" id="56r-yV-MfX"/>
+                <constraint firstItem="KNq-96-nXT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Qvi-Ke-Lu5"/>
+                <constraint firstItem="KNq-96-nXT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aKU-6b-DgZ"/>
+                <constraint firstItem="KNq-96-nXT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="326:375" id="hrW-oU-RkN"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBtn" destination="T6u-Uk-6ln" id="Edx-ow-vCY"/>
+                <outlet property="formTf" destination="Ihy-vn-cYR" id="fl6-O3-Xg9"/>
+                <outlet property="okBtn" destination="B9c-fh-6Kt" id="t7H-1e-GlV"/>
+                <outlet property="titleLbl" destination="8ar-HH-9Uu" id="5tQ-Lw-VUQ"/>
+            </connections>
+            <point key="canvasLocation" x="-39.200000000000003" y="-417.8410794602699"/>
+        </view>
+    </objects>
+</document>

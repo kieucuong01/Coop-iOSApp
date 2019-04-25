@@ -1,0 +1,81 @@
+/*
+ Localizable.strings
+ ParkingManagementApp-ios
+ 
+ Created by Cuong Kieu on 6/21/18.
+ Copyright © 2018 Oceanize. All rights reserved.
+ */
+
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Common
+ ****
+ */
+"yen" = "đ";
+"year" = "N";
+"month" = "T";
+"yes" = "Yes";
+"no" = "No";
+"Global_Date_Format" = "dd/MM/yyyy";
+
+// MARK: - COMMON ALERT TITLE
+"alert_warning_title"                   = "Warning";
+"alert_view_setting_label_logout"       = "Logout";
+"alert_view_setting_label_logout_success"      =    "ログアウトしました";
+"alert_edit_profile_success_title" = "プロフィールを変更しました";
+
+// MARK: - COMMON BUTTON TITLE
+"button_cancel_title"          = "Hủy";
+"button_ok_title"          = "OK";
+"button_done_title"          = "Hoàn thành";
+"button_back_title"            = "Quay lại";
+"button_camera_title"           = "Chụp ảnh";
+"button_library_title"           = "Chọn ảnh";
+
+// MARK: - ERROR MESSAGE
+"error_empty_text"                  = "Không được để trống";
+"error_wrong_format_email"          = "Mail sai định dạng";
+"error_empty_email"                 = "Mail không được để trống";
+"error_existed_email"               = "Đã tồn tại email";
+"error_empty_password"              = "Mật khẩu không được để trống";
+"error_wrong_email"                 = "Sai thông tin email";
+"error_not_cofirm_email"            = "Mail chưa được xác nhận";
+"error_wrong_format_password" = "Mật khẩu sai định dạng";
+"error_wrong_format_phone" = "Sai định dạng số điện thoại";
+"error_wrong_email_or_password"     = "Sai thông tin đăng nhập";
+"error_empty_phone"                  = "SDT không được để trống";
+"error_no_internet_connection"       = "Không có kết nối internet";
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Localized by flow screen
+ ****
+ */
+
+// MARK: - INTRO SCREEN
+"intro_lbl_title1" = "Intro title 1";
+"intro_lbl_subtitle1" = "Intro subtitle 1";
+"intro_lbl_title2" = "Intro title 2";
+"intro_lbl_subtitle2" = "Intro subtitle 2";
+"intro_lbl_title3" = "Intro title 3";
+"intro_lbl_subtitle3" = "Intro subtitle 1";
+"intro_btn_skip" = "SKIP";
+"intro_btn_start" = "START";
+
+// MARK: - SIGNIN SCREEN
+"signin_btn_forget" = "QUÊN MẬT KHẨU?";
+"signin_tf_email" = "Tài khoản";
+"signin_tf_password" = "Mật khẩu";
+"signin_btn_signin" = "ĐĂNG NHẬP";
+
+"mypage_btn_faq" = "Câu hỏi thường gặp";
+"mypage_btn_reseting" = "Thay đổi";
+"mypage_lbl_profile" = "Thông tin";
+"mypage_lbl_property" = "Tài sản";
+"mypage_lbl_term" = "Điều khoản";
+"mypage_lbl_policy" = "Chính sách riêng tư";
+"mypage_lbl_version" = "Version";
+"mypage_lbl_logout" = "Đăng xuất";
+
+"new_lbl_tabbar" = "LỊCH";
+"dashboard_lbl_tabbar" = "THỐNG KÊ";
+"chat_lbl_tabbar" = "BẢN ĐỒ";

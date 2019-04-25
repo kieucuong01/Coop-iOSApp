@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TitleContentTVC" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleContentTVC" rowHeight="101" id="KGk-i7-Jjw" customClass="TitleContentTVC" customModule="CoopApp_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEz-kT-raW" customClass="UIAppLabel" customModule="CoopApp_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="15" width="320" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="colorAdapter">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-AV-7ag" customClass="UIAppLabel" customModule="CoopApp_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="66" width="320" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="colorAdapter">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mSize">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djy-2q-BSR">
+                        <rect key="frame" x="0.0" y="100" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="O81-cb-fNn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="djy-2q-BSR" secondAttribute="bottom" constant="-0.5" id="35e-Tt-UiH"/>
+                    <constraint firstAttribute="bottom" secondItem="5X9-AV-7ag" secondAttribute="bottom" constant="15" id="Bqu-Jo-EMn"/>
+                    <constraint firstItem="yEz-kT-raW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EKq-xW-BmA"/>
+                    <constraint firstAttribute="trailing" secondItem="djy-2q-BSR" secondAttribute="trailing" id="Eyi-CI-oqD"/>
+                    <constraint firstItem="5X9-AV-7ag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XZ6-2y-vtV"/>
+                    <constraint firstItem="yEz-kT-raW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bAh-Im-4st"/>
+                    <constraint firstItem="djy-2q-BSR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d9X-6e-LBq"/>
+                    <constraint firstItem="5X9-AV-7ag" firstAttribute="top" secondItem="yEz-kT-raW" secondAttribute="bottom" constant="6" id="jsf-Ws-d5o"/>
+                    <constraint firstAttribute="trailing" secondItem="yEz-kT-raW" secondAttribute="trailing" id="kZ6-aF-hw4"/>
+                    <constraint firstAttribute="trailing" secondItem="5X9-AV-7ag" secondAttribute="trailing" id="muh-34-dUR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentlbl" destination="5X9-AV-7ag" id="tQc-p8-ROz"/>
+                <outlet property="lineView" destination="djy-2q-BSR" id="6qB-rg-PIF"/>
+                <outlet property="titlelbl" destination="yEz-kT-raW" id="icg-lG-MqS"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

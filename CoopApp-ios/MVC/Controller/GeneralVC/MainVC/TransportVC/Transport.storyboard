@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transport VehicleVC-->
+        <scene sceneID="Tno-pX-EwV">
+            <objects>
+                <viewController storyboardIdentifier="transportVehicleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2ju-7J-9Xs" customClass="TransportVehicleVC" customModule="CoopApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9i-te-AhL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Tìm xe vận chuyển" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-xC-hpa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2ju-7J-9Xs" id="LhN-am-cvY"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmO-gw-UFf">
+                                <rect key="frame" x="0.0" y="76" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3X-Z7-tyc">
+                                        <rect key="frame" x="1" y="0.0" width="186.5" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="186.5" id="fip-3T-TE5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Mã vận chuyển" image="expand">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchTypeBtnAction:" destination="2ju-7J-9Xs" eventType="touchUpInside" id="VCh-NY-ygS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk4-7w-8YG">
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tập trung" image="expand">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchOrderTypeBtnAction:" destination="2ju-7J-9Xs" eventType="touchUpInside" id="01l-LZ-KpG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dk4-7w-8YG" firstAttribute="leading" secondItem="u3X-Z7-tyc" secondAttribute="trailing" constant="2" id="9SS-j9-WjB"/>
+                                    <constraint firstAttribute="height" constant="44" id="SdN-6i-zQL"/>
+                                    <constraint firstItem="u3X-Z7-tyc" firstAttribute="top" secondItem="tmO-gw-UFf" secondAttribute="top" id="dFv-Oi-aEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dk4-7w-8YG" secondAttribute="trailing" constant="1" id="esH-vz-YPN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dk4-7w-8YG" secondAttribute="bottom" id="fM3-hc-b4A"/>
+                                    <constraint firstItem="u3X-Z7-tyc" firstAttribute="leading" secondItem="tmO-gw-UFf" secondAttribute="leading" constant="1" id="myE-mf-kBt"/>
+                                    <constraint firstItem="Dk4-7w-8YG" firstAttribute="top" secondItem="tmO-gw-UFf" secondAttribute="top" id="vHK-Xd-gjU"/>
+                                    <constraint firstAttribute="bottom" secondItem="u3X-Z7-tyc" secondAttribute="bottom" id="yDn-77-URp"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-Gz-T5d" customClass="TPKeyboardAvoidingTableView">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8AW-xC-hpa" firstAttribute="top" secondItem="g7a-KK-CW7" secondAttribute="top" id="3K3-qK-6qX"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="trailing" secondItem="hmd-Gz-T5d" secondAttribute="trailing" id="AKW-kV-4VW"/>
+                            <constraint firstItem="8AW-xC-hpa" firstAttribute="leading" secondItem="g7a-KK-CW7" secondAttribute="leading" id="Bl4-Qn-Qzp"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="trailing" secondItem="tmO-gw-UFf" secondAttribute="trailing" id="EvA-JL-th8"/>
+                            <constraint firstItem="hmd-Gz-T5d" firstAttribute="top" secondItem="tmO-gw-UFf" secondAttribute="bottom" id="WcQ-BE-Yon"/>
+                            <constraint firstItem="hmd-Gz-T5d" firstAttribute="leading" secondItem="g7a-KK-CW7" secondAttribute="leading" id="giy-0B-cXg"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="trailing" secondItem="8AW-xC-hpa" secondAttribute="trailing" id="jWK-5g-vGj"/>
+                            <constraint firstItem="tmO-gw-UFf" firstAttribute="leading" secondItem="g7a-KK-CW7" secondAttribute="leading" id="qUT-90-n4w"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="bottom" secondItem="hmd-Gz-T5d" secondAttribute="bottom" id="tpC-yK-8YH"/>
+                            <constraint firstItem="tmO-gw-UFf" firstAttribute="top" secondItem="8AW-xC-hpa" secondAttribute="bottom" id="yE0-bp-aCQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g7a-KK-CW7"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchOrderTypeBtn" destination="Dk4-7w-8YG" id="H3u-6h-evl"/>
+                        <outlet property="searchTypeBtn" destination="u3X-Z7-tyc" id="H4P-t4-X4E"/>
+                        <outlet property="tableView" destination="hmd-Gz-T5d" id="f9A-T5-W2h"/>
+                        <outlet property="widthSearchTypeConstraint" destination="fip-3T-TE5" id="Zsg-xC-9Nt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ye-Ww-OEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1585" y="-958"/>
+        </scene>
+        <!--Warehouse TransportVC-->
+        <scene sceneID="7uL-ju-bCX">
+            <objects>
+                <viewController storyboardIdentifier="warehouseTransportVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aT3-Wl-dBl" customClass="WarehouseTransportVC" customModule="CoopApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="421-Kh-8ri">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mE2-ct-Q6T">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mE2-ct-Q6T" firstAttribute="leading" secondItem="cgZ-Tt-y4Q" secondAttribute="leading" id="N3p-0B-WMt"/>
+                            <constraint firstItem="cgZ-Tt-y4Q" firstAttribute="bottom" secondItem="mE2-ct-Q6T" secondAttribute="bottom" id="Shs-1a-wsk"/>
+                            <constraint firstItem="cgZ-Tt-y4Q" firstAttribute="trailing" secondItem="mE2-ct-Q6T" secondAttribute="trailing" id="YfY-gk-Rhp"/>
+                            <constraint firstItem="mE2-ct-Q6T" firstAttribute="top" secondItem="cgZ-Tt-y4Q" secondAttribute="top" id="cQi-mf-e2D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cgZ-Tt-y4Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mE2-ct-Q6T" id="b5D-Qw-j2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVs-ay-1HQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="-958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="expand" width="13" height="8"/>
+    </resources>
+</document>

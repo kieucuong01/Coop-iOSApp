@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "yef5-h88r",
+      "name" : "Public Art",
+    }
+  },
+  "data" : [ [ "BÃI XE SỐ 4\nTrường Đại học Bách khoa - ĐHQG-TP. HCM. ",
+                "268 Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh, Việt Nam.",
+                0,
+                "10.7678894",
+                "106.6602458"]
+          ,[ "BÃI XE SỐ 1\nLIFULL TECH VN",
+              "17 Đường số 2, Phường 4, Quận 3, Hồ Chí Minh",
+              0,
+              "10.7728982",
+              "106.6790271"]
+          ,[ "BÃI XE SỐ 2\nTrường Đại học Y khoa Phạm Ngọc Thạch",
+              "Số 2 Quang Trung, Phường 12, Quận 10, Hồ Chí Minh, Việt Nam.",
+              1,
+              "10.768061",
+              "106.6586556"]
+          ,[ "BÃI XE SỐ 3\nTrường Đại học Y Dược",
+              "217 Hồng Bàng, Phường 11, Quận 5, Hồ Chí Minh, Việt Nam.",
+              1,
+              "10.7558566",
+              "106.6641362"]
+ ]
+}

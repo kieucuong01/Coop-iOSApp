@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ltc-La-u1o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DashboardVC-->
+        <scene sceneID="KDC-qy-bVg">
+            <objects>
+                <viewController storyboardIdentifier="dashboardVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ltc-La-u1o" customClass="DashboardVC" customModule="CoopApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uGS-5T-CTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wiu-WC-Slq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOe-4F-eXy">
+                                <rect key="frame" x="0.0" y="-14.5" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang phát triển..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erO-tK-9T1">
+                                        <rect key="frame" x="0.0" y="317.5" width="375" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="1" green="0.01164490638" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="erO-tK-9T1" firstAttribute="width" secondItem="GOe-4F-eXy" secondAttribute="width" id="HNO-UO-Rds"/>
+                                    <constraint firstItem="erO-tK-9T1" firstAttribute="centerY" secondItem="GOe-4F-eXy" secondAttribute="centerY" id="cjF-3A-yNg"/>
+                                    <constraint firstItem="erO-tK-9T1" firstAttribute="centerX" secondItem="GOe-4F-eXy" secondAttribute="centerX" id="v21-mi-98D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GOe-4F-eXy" firstAttribute="centerY" secondItem="fdU-iB-uTK" secondAttribute="centerY" id="V32-7p-SUq"/>
+                            <constraint firstItem="GOe-4F-eXy" firstAttribute="width" secondItem="uGS-5T-CTP" secondAttribute="width" id="VP0-sU-Suh"/>
+                            <constraint firstItem="fdU-iB-uTK" firstAttribute="trailing" secondItem="wiu-WC-Slq" secondAttribute="trailing" id="ceq-SV-xwW"/>
+                            <constraint firstItem="fdU-iB-uTK" firstAttribute="bottom" secondItem="wiu-WC-Slq" secondAttribute="bottom" id="fA3-0i-4E1"/>
+                            <constraint firstItem="GOe-4F-eXy" firstAttribute="height" secondItem="uGS-5T-CTP" secondAttribute="height" id="mUC-fa-5Nr"/>
+                            <constraint firstItem="GOe-4F-eXy" firstAttribute="centerX" secondItem="fdU-iB-uTK" secondAttribute="centerX" id="njG-w3-DDr"/>
+                            <constraint firstItem="wiu-WC-Slq" firstAttribute="top" secondItem="fdU-iB-uTK" secondAttribute="top" id="rSd-36-ZAQ"/>
+                            <constraint firstItem="wiu-WC-Slq" firstAttribute="leading" secondItem="fdU-iB-uTK" secondAttribute="leading" id="x4A-EX-Xuf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fdU-iB-uTK"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="cIo-4p-Ecj">
+                        <barButtonItem key="leftBarButtonItem" image="ic_menu" id="gKO-PS-Idn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="showLeftMenu:" destination="ltc-La-u1o" id="fb6-Ta-Bex"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="ygs-jd-mPa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="showRightMenu:" destination="ltc-La-u1o" id="SSH-yH-weG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="wiu-WC-Slq" id="9zL-YI-04Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3EZ-dT-qw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="105"/>
+        </scene>
+        <!--History RecordVC-->
+        <scene sceneID="uBb-C7-yna">
+            <objects>
+                <viewController storyboardIdentifier="historyRecordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WEd-p6-f4c" customClass="HistoryRecordVC" customModule="CoopApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W45-Im-ote"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bcy-an-NuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amw-g5-hbU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQu-vA-PHA" customClass="ExpandableTableView" customModule="CoopApp_ios" customModuleProvider="target">
+                                <rect key="frame" x="10" y="115" width="355" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WEd-p6-f4c" id="y6c-Kr-FJR"/>
+                                    <outlet property="delegate" destination="WEd-p6-f4c" id="fTg-Aa-d62"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November expenditure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvO-LV-TKF">
+                                <rect key="frame" x="57" y="50" width="261" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bcy-an-NuU" firstAttribute="top" secondItem="gQu-vA-PHA" secondAttribute="bottom" id="908-Ak-F1O"/>
+                            <constraint firstAttribute="trailing" secondItem="gQu-vA-PHA" secondAttribute="trailing" constant="10" id="AfV-Jx-FLr"/>
+                            <constraint firstItem="gQu-vA-PHA" firstAttribute="top" secondItem="tvO-LV-TKF" secondAttribute="bottom" constant="30" id="BRg-dF-1aK"/>
+                            <constraint firstItem="tvO-LV-TKF" firstAttribute="centerX" secondItem="8Cg-vk-4xz" secondAttribute="centerX" id="Wyw-hD-ai2"/>
+                            <constraint firstItem="gQu-vA-PHA" firstAttribute="leading" secondItem="amw-g5-hbU" secondAttribute="leading" constant="10" id="upf-aX-2bl"/>
+                            <constraint firstItem="tvO-LV-TKF" firstAttribute="top" secondItem="8Cg-vk-4xz" secondAttribute="top" constant="30" id="uwR-qj-B4l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Cg-vk-4xz"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gQu-vA-PHA" id="g2l-Mh-dkM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpE-SP-sSY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

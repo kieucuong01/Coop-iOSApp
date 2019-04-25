@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ProductVC-->
+        <scene sceneID="Tno-pX-EwV">
+            <objects>
+                <viewController storyboardIdentifier="productVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2ju-7J-9Xs" customClass="ProductVC" customModule="CoopApp_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9i-te-AhL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hmd-Gz-T5d">
+                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVA-Da-RIh">
+                                <rect key="frame" x="0.0" y="21" width="375" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-L5-IHr">
+                                        <rect key="frame" x="1" y="0.0" width="185.5" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Danh mục" image="expand">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categoryAction:" destination="2ju-7J-9Xs" eventType="touchUpInside" id="ti3-Ml-Azq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGl-Sg-6fv">
+                                        <rect key="frame" x="188.5" y="0.0" width="185.5" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tập trung" image="expand">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="orderTypeBtnAction" destination="2ju-7J-9Xs" eventType="touchUpInside" id="RIS-4D-ztv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OPD-L5-IHr" firstAttribute="top" secondItem="RVA-Da-RIh" secondAttribute="top" id="33f-i1-Efu"/>
+                                    <constraint firstItem="OPD-L5-IHr" firstAttribute="leading" secondItem="RVA-Da-RIh" secondAttribute="leading" constant="1" id="5fb-E0-7EG"/>
+                                    <constraint firstItem="EGl-Sg-6fv" firstAttribute="top" secondItem="RVA-Da-RIh" secondAttribute="top" id="IGS-Hr-Dbk"/>
+                                    <constraint firstAttribute="height" constant="35" id="IsC-W7-kgw"/>
+                                    <constraint firstAttribute="trailing" secondItem="EGl-Sg-6fv" secondAttribute="trailing" constant="1" id="KiC-Ty-VbJ"/>
+                                    <constraint firstItem="EGl-Sg-6fv" firstAttribute="leading" secondItem="OPD-L5-IHr" secondAttribute="trailing" constant="2" id="ODq-kb-H2L"/>
+                                    <constraint firstAttribute="bottom" secondItem="OPD-L5-IHr" secondAttribute="bottom" id="P4P-ba-NkO"/>
+                                    <constraint firstAttribute="bottom" secondItem="EGl-Sg-6fv" secondAttribute="bottom" id="WqC-v0-u25"/>
+                                    <constraint firstItem="OPD-L5-IHr" firstAttribute="width" secondItem="EGl-Sg-6fv" secondAttribute="width" id="fe4-Xq-yNq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="trailing" secondItem="hmd-Gz-T5d" secondAttribute="trailing" id="AKW-kV-4VW"/>
+                            <constraint firstItem="hmd-Gz-T5d" firstAttribute="top" secondItem="RVA-Da-RIh" secondAttribute="bottom" constant="1" id="DkD-OE-zSU"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="trailing" secondItem="RVA-Da-RIh" secondAttribute="trailing" id="IZ8-Ue-A7c"/>
+                            <constraint firstItem="RVA-Da-RIh" firstAttribute="top" secondItem="g7a-KK-CW7" secondAttribute="top" constant="1" id="e7v-h4-0DM"/>
+                            <constraint firstItem="RVA-Da-RIh" firstAttribute="leading" secondItem="g7a-KK-CW7" secondAttribute="leading" id="eGu-fX-MQc"/>
+                            <constraint firstItem="hmd-Gz-T5d" firstAttribute="leading" secondItem="g7a-KK-CW7" secondAttribute="leading" id="giy-0B-cXg"/>
+                            <constraint firstItem="g7a-KK-CW7" firstAttribute="bottom" secondItem="hmd-Gz-T5d" secondAttribute="bottom" id="tpC-yK-8YH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g7a-KK-CW7"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLbl" destination="OPD-L5-IHr" id="lEe-4c-mOd"/>
+                        <outlet property="orderTypeLbl" destination="EGl-Sg-6fv" id="90E-O4-JMj"/>
+                        <outlet property="tableView" destination="hmd-Gz-T5d" id="f9A-T5-W2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ye-Ww-OEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1585" y="-958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="expand" width="13" height="8"/>
+    </resources>
+</document>
